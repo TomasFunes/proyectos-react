@@ -26,6 +26,7 @@ export default function ItemForm(props: {
 
     return (
         <form onSubmit={props.onItem}>
+            <h3>Item info</h3>
             <p>
                 <label htmlFor="title">Title: </label>
                 <input type="text" id="title" name="title" value={itemData?.title} onChange={(e) => handleChange(e)}/>

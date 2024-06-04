@@ -2,6 +2,7 @@ import List from "./components/list"
 import { useReducer, useState } from "react";
 import { ItemsContext, ItemsDispatchContext } from "./item-context";
 import ListForm from "./components/list-form";
+import Header from "./components/header";
 
 type List = {
     id: number,
@@ -160,6 +161,7 @@ export default function App() {
 
     return (
         <>
+        <Header />
         <ItemsContext.Provider value={items}>
             <ItemsDispatchContext.Provider value={dispatchItems}>
                 {lists.map(list => {

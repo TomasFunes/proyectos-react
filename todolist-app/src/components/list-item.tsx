@@ -33,6 +33,8 @@ export default function ListItem (props: Item) {
 
             });
         }
+
+        setEditMode(false);
     }
 
     function handleDeleteItem(id: number) {
